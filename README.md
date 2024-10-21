@@ -33,11 +33,12 @@ I started and finished this project in August 2024.
 - PostgreSQL: instalation, setting up a db, using node-postgres in Express (client & pool), database queries
 - Express validator: form data validation: body() function & validationResult
 - Error handling: error middleware function, custom errors; express-async-handler: catching thrown errors 
-- Authentication:
-* HTTP Headers & Cookies
-* express-session library: session vs cookie, express session module, session store implementation: connect-pg-simple
-* passport: local strategy, verifyCallback function, passport.authenticate() middleware, req.session object, serialize and deserialize functions, req.logout() & req.isAuthenticated() middleware
-* bcrypt: bcrypt.hash: hashing passwords, bcrypt.compare(): compares plain-text password to the hashed password
+
+Authentication:
+- HTTP Headers & Cookies
+- express-session library: session vs cookie, express session module, session store implementation: connect-pg-simple
+- passport: local strategy, verifyCallback function, passport.authenticate() middleware, req.session object, serialize and deserialize functions, req.logout() & req.isAuthenticated() middleware
+- bcrypt: bcrypt.hash: hashing passwords, bcrypt.compare(): compares plain-text password to the hashed password
 
 ## Screenshots
 
@@ -47,6 +48,12 @@ I started and finished this project in August 2024.
 
 ![Desktop Screenshot](screenshots/desktop1.png)
 
+![Desktop Screenshot](screenshots/desktop5.png)
+
+![Desktop Screenshot](screenshots/desktop7.png)
+
+![Desktop Screenshot](screenshots/desktop6.png)
+
 #### Member
 
 ![Desktop Screenshot](screenshots/desktop2.png)
@@ -55,16 +62,9 @@ I started and finished this project in August 2024.
 
 ![Desktop Screenshot](screenshots/desktop3.png)
 
-#### All
+#### Admin & Member
 
 ![Desktop Screenshot](screenshots/desktop4.png)
-
-![Desktop Screenshot](screenshots/desktop5.png)
-
-![Desktop Screenshot](screenshots/desktop6.png)
-
-![Desktop Screenshot](screenshots/desktop7.png)
-
 
 ### Mobile
 
