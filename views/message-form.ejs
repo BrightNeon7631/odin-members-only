@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Members Only</title>
+</head>
+<body>
+    <%- include('partials/header') %>
+    <div class="sign-up-form-container">
+        <h2>New Message</h2>
+        <form class="form-container" method="POST" action="">
+            <div class="form-item">
+                <label for="title">Title</label>
+                <input name="title" id="title" type="text" required maxlength="100" />
+            </div>
+            <div class="form-item">
+                <label for="text">Message</label>
+                <textarea name="text" id="text" type="text" required maxlength="250"></textarea>
+            </div>
+            <button>Add Message</button>
+        </form>
+    </div>
+    <%- include('partials/errors.ejs') %>
+</body>
+</html>

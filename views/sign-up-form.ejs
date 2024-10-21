@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Members Only</title>
+  <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+  <%- include('partials/header') %>
+  <div class="sign-up-form-container">
+    <h1>Sign Up</h1>
+    <form class="form-container" action="" method="POST">
+        <div class="form-item">
+            <label for="firstname">First name</label>
+            <input id="firstname" name="firstname" type="text" required maxlength="100"/>
+        </div>
+
+        <div class="form-item">
+            <label for="lastname">Last name</label>
+            <input id="lastname" name="lastname" type="text" required maxlength="100"/>
+        </div>
+      
+        <div class="form-item">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required maxlength="100"/>
+        </div>
+
+        <div class="form-item">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" required maxlength="100"/>
+        </div>
+
+        <div class="form-item">
+            <label for="confirmPassword">Confirm Password</label>
+            <input id="confirmPassword" name="confirmPassword" type="password" required maxlength="100"/>
+        </div>
+
+        <div class="form-item-checkbox">
+            <input id="isAdmin" name="isAdmin" type="checkbox"/>
+            <label for="isAdmin">Is admin?</label>
+        </div>
+  
+      <button>Sign Up</button>
+    </form>
+  </div>
+  <%- include('partials/errors.ejs') %>
+</body>
+</html>

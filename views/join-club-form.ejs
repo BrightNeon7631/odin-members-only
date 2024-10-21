@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Members Only</title>
+  <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+  <%- include('partials/header') %>
+  <div class="sign-up-form-container">
+    <h1>Join Club</h1>
+    <form class="form-container" action="" method="POST">
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" required maxlength="100"/>
+      <button>Join</button>
+    </form>
+  </div>
+  <%- include('partials/errors.ejs') %>
+</body>
+</html>

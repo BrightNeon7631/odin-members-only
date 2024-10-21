@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Members Only</title>
+</head>
+<body>
+    <%- include('partials/header') %>
+
+    <% if (locals.user && locals.user.member) {%>
+        <a href="/messages/new"><button>Add Message</button></a>
+    <% } %>
+
+    <div class="messages-container">
+        <% messages.map((message) => { %>
+            <div class="message">
+                <div class="message-top">
+                    <% if (locals.user && locals.user.member) {%>
+                        <div><%= message.firstname%> <%= message.lastname%></div>
+                        <div><%= new Date(message.created_on).toLocaleDateString('en-US')%></div>
+                    <% } %>
+                </div>
+                <div class="message-bottom">
+                    <div><%= message.title%></div>
+                    <div><%= message.text%></div>
+                    <% if (locals.user && locals.user.member && locals.user.admin) {%>
+                        <form action="/messages/<%= message.id%>/delete" method="POST">
+                            <button>DELETE</button>
+                        </form>
+                    <% } %>
+                </div>
+            </div>
+        <% }) %>
+    </div>
+</body>
+</html>

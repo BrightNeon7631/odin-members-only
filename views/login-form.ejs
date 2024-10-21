@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Members Only</title>
+  <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+  <%- include('partials/header') %>
+  <div class="sign-up-form-container">
+    <h1>Login</h1>
+    <form class="form-container" action="" method="POST">
+      <div class="form-item">
+        <label for="username">Email</label>
+        <input id="username" name="username" type="email" required maxlength="100"/>
+      </div>
+  
+      <div class="form-item">
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" required maxlength="100"/>
+      </div>
+     
+      <button>Login</button>
+    </form>
+  </div>
+  <%- include('partials/errors.ejs') %>
+  <%- include('partials/passportErrors.ejs') %>
+</body>
+</html>
